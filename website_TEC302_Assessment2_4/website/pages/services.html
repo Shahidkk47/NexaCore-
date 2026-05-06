@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — NexaCore</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">Nexa<span>Core</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2" style="left:70%;top:60%"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="page-hero-content animate-fade-up">
+      <span class="eyebrow">What We Do</span>
+      <h1>Our <span class="highlight">Services</span></h1>
+      <p>Comprehensive digital solutions engineered for scale, speed, and lasting impact.</p>
+    </div>
+  </section>
+
+  <!-- Filter Tabs -->
+  <section class="filter-section">
+    <div class="filter-tabs" id="filterTabs">
+      <button class="filter-btn active" data-filter="all">All Services</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="development">Development</button>
+      <button class="filter-btn" data-filter="strategy">Strategy</button>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="services-grid-section">
+    <div class="services-grid" id="servicesGrid">
+
+      <div class="service-card" data-category="design">
+        <div class="sc-header">
+          <span class="sc-icon">🎨</span>
+          <span class="sc-tag">Design</span>
+        </div>
+        <h3>UI/UX Design</h3>
+        <p>Human-centred design research, wireframing, and high-fidelity prototyping that convert visitors into loyal customers.</p>
+        <ul class="sc-list">
+          <li>User Research & Personas</li>
+          <li>Wireframing & Prototyping</li>
+          <li>Design System Creation</li>
+          <li>Usability Testing</li>
+        </ul>
+        <div class="sc-footer">
+          <span class="sc-price">From $2,400</span>
+          <a href="contact.html" class="sc-link">Get Quote →</a>
+        </div>
+      </div>
+
+      <div class="service-card featured" data-category="development">
+        <div class="featured-badge">Most Popular</div>
+        <div class="sc-header">
+          <span class="sc-icon">💻</span>
+          <span class="sc-tag">Development</span>
+        </div>
+        <h3>Full-Stack Web Development</h3>
+        <p>End-to-end web application development using modern frameworks, RESTful APIs, and cloud-native infrastructure.</p>
+        <ul class="sc-list">
+          <li>React / Vue / Angular SPAs</li>
+          <li>Node.js & Python Backends</li>
+          <li>Database Architecture</li>
+          <li>Cloud Deployment (AWS/GCP)</li>
+        </ul>
+        <div class="sc-footer">
+          <span class="sc-price">From $5,800</span>
+          <a href="contact.html" class="sc-link">Get Quote →</a>
+        </div>
+      </div>
+
+      <div class="service-card" data-category="development">
+        <div class="sc-header">
+          <span class="sc-icon">📱</span>
+          <span class="sc-tag">Development</span>
+        </div>
+        <h3>Mobile App Development</h3>
+        <p>Cross-platform and native mobile applications that deliver smooth, intuitive experiences on iOS and Android.</p>
+        <ul class="sc-list">
+          <li>React Native / Flutter</li>
+          <li>Native iOS & Android</li>
+          <li>App Store Optimisation</li>
+          <li>Push Notifications & Analytics</li>
+        </ul>
+        <div class="sc-footer">
+          <span class="sc-price">From $7,200</span>
+          <a href="contact.html" class="sc-link">Get Quote →</a>
+        </div>
+      </div>
+
+      <div class="service-card" data-category="strategy">
+        <div class="sc-header">
+          <span class="sc-icon">📊</span>
+          <span class="sc-tag">Strategy</span>
+        </div>
+        <h3>Digital Strategy & Consulting</h3>
+        <p>Data-driven roadmaps that align your technology investments with measurable business objectives.</p>
+        <ul class="sc-list">
+          <li>Technology Audits</li>
+          <li>Competitor Analysis</li>
+          <li>Growth Roadmapping</li>
+          <li>KPI & Analytics Setup</li>
+        </ul>
+        <div class="sc-footer">
+          <span class="sc-price">From $1,800</span>
+          <a href="contact.html" class="sc-link">Get Quote →</a>
+        </div>
+      </div>
+
+      <div class="service-card" data-category="design">
+        <div class="sc-header">
+          <span class="sc-icon">🌐</span>
+          <span class="sc-tag">Design</span>
+        </div>
+        <h3>Brand Identity & Visual Design</h3>
+        <p>Cohesive brand systems including logos, typography, colour palettes, and comprehensive brand guidelines.</p>
+        <ul class="sc-list">
+          <li>Logo & Mark Design</li>
+          <li>Brand Guidelines</li>
+          <li>Marketing Collateral</li>
+          <li>Motion & Animation</li>
+        </ul>
+        <div class="sc-footer">
+          <span class="sc-price">From $3,200</span>
+          <a href="contact.html" class="sc-link">Get Quote →</a>
+        </div>
+      </div>
+
+      <div class="service-card" data-category="strategy">
+        <div class="sc-header">
+          <span class="sc-icon">🔍</span>
+          <span class="sc-tag">Strategy</span>
+        </div>
+        <h3>SEO & Performance Optimisation</h3>
+        <p>Technical SEO audits, Core Web Vitals optimisation, and ongoing performance monitoring for sustained organic growth.</p>
+        <ul class="sc-list">
+          <li>Technical SEO Audits</li>
+          <li>Core Web Vitals</li>
+          <li>Content Strategy</li>
+          <li>Backlink Analysis</li>
+        </ul>
+        <div class="sc-footer">
+          <span class="sc-price">From $1,200/mo</span>
+          <a href="contact.html" class="sc-link">Get Quote →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Accordion FAQ -->
+  <section class="faq-section">
+    <div class="section-header">
+      <span class="eyebrow">Got Questions?</span>
+      <h2>Frequently <em>Asked</em></h2>
+    </div>
+    <div class="accordion" id="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">How long does a typical project take?<span class="acc-icon">+</span></button>
+        <div class="accordion-body"><p>Project timelines vary by scope. A standard branding project takes 3–4 weeks, while a full-stack web application averages 8–16 weeks. We provide detailed timelines in every project proposal.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Do you offer ongoing support after launch?<span class="acc-icon">+</span></button>
+        <div class="accordion-body"><p>Yes. We offer flexible retainer packages for maintenance, updates, performance monitoring, and new feature development. All launched projects include a complimentary 30-day support period.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">What industries do you specialise in?<span class="acc-icon">+</span></button>
+        <div class="accordion-body"><p>We have deep expertise in SaaS, fintech, healthcare, e-commerce, and education technology. Our process is industry-agnostic, though — we adapt our methodology to suit your specific sector requirements.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Can you work with our existing tech stack?<span class="acc-icon">+</span></button>
+        <div class="accordion-body"><p>Absolutely. We conduct a technology audit at the start of every engagement to understand your current stack and determine the most efficient path forward — whether that's integrating with existing systems or recommending modern alternatives.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="../index.html" class="logo">Nexa<span>Core</span></a>
+      <nav class="footer-nav">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2024 NexaCore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

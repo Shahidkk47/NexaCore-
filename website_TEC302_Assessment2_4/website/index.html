@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexaCore — Shaping the Future</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="pageLoader" class="page-loader">
+    <div class="loader-inner">
+      <div class="loader-logo">Nexa<span>Core</span></div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <p class="loader-text" id="loaderText">Initialising...</p>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Nexa<span>Core</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/services.html">Services</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span id="themeIcon">☀️</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="badge animate-fade-up" style="animation-delay:0.1s">✦ Welcome to the future</div>
+      <h1 class="hero-title animate-fade-up" style="animation-delay:0.2s">
+        We Build<br />
+        <span class="highlight" id="typingText"></span><span class="typing-cursor">|</span><br />
+        That Matter
+      </h1>
+      <p class="hero-sub animate-fade-up" style="animation-delay:0.35s">
+        NexaCore fuses design intelligence with cutting-edge engineering to deliver products that redefine what's possible online.
+      </p>
+      <div class="hero-cta animate-fade-up" style="animation-delay:0.5s">
+        <a href="pages/services.html" class="btn btn-primary">Explore Services</a>
+        <a href="pages/contact.html" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual animate-fade-up" style="animation-delay:0.4s">
+      <div class="card-stack">
+        <div class="float-card fc-1"><span class="fc-icon">⚡</span><p>Lightning Fast</p></div>
+        <div class="float-card fc-2"><span class="fc-icon">🎨</span><p>Pixel Perfect</p></div>
+        <div class="float-card fc-3"><span class="fc-icon">🔒</span><p>Secure by Default</p></div>
+        <div class="center-card">
+          <div class="cc-inner">
+            <div class="cc-ring"></div>
+            <span class="cc-text">NC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item" data-target="250"><span class="stat-num" id="stat-0">0</span><span class="stat-plus">+</span><p>Projects Delivered</p></div>
+      <div class="stat-item" data-target="98"><span class="stat-num" id="stat-1">0</span><span class="stat-plus">%</span><p>Client Satisfaction</p></div>
+      <div class="stat-item" data-target="12"><span class="stat-num" id="stat-2">0</span><span class="stat-plus">+</span><p>Years of Excellence</p></div>
+      <div class="stat-item" data-target="40"><span class="stat-num" id="stat-3">0</span><span class="stat-plus">+</span><p>Team Members</p></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features-section">
+    <div class="section-header">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Built for <em>Performance</em></h2>
+      <p>Every product we craft is engineered to perform beautifully across all platforms and use cases.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal-item" data-tilt>
+        <div class="fc-top"><div class="fc-num">01</div><div class="fc-icon-lg">🏗️</div></div>
+        <h3>Architecture First</h3>
+        <p>We design scalable system architectures before writing a single line of code, ensuring your platform grows with you.</p>
+      </div>
+      <div class="feature-card reveal-item" data-tilt>
+        <div class="fc-top"><div class="fc-num">02</div><div class="fc-icon-lg">📱</div></div>
+        <h3>Mobile-First Design</h3>
+        <p>Every interface is conceived for mobile and progressively enhanced for larger screens — never the other way around.</p>
+      </div>
+      <div class="feature-card reveal-item" data-tilt>
+        <div class="fc-top"><div class="fc-num">03</div><div class="fc-icon-lg">⚙️</div></div>
+        <h3>Automation & DevOps</h3>
+        <p>Continuous integration, automated testing, and streamlined deployment pipelines keep your product live and reliable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process-section">
+    <div class="section-header">
+      <span class="eyebrow">How We Work</span>
+      <h2>Our <em>Process</em></h2>
+      <p>A proven four-step methodology that transforms ideas into exceptional digital products.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal-item">
+        <div class="step-num">01</div>
+        <h3>Discovery</h3>
+        <p>We deeply understand your goals, users, and competitive landscape before touching a single tool.</p>
+      </div>
+      <div class="process-step reveal-item">
+        <div class="step-num">02</div>
+        <h3>Design</h3>
+        <p>Wireframes, prototypes, and design systems crafted with precision and user experience at the core.</p>
+      </div>
+      <div class="process-step reveal-item">
+        <div class="step-num">03</div>
+        <h3>Build</h3>
+        <p>Clean, scalable code written by expert engineers using the most modern technologies available.</p>
+      </div>
+      <div class="process-step reveal-item">
+        <div class="step-num">04</div>
+        <h3>Launch & Support</h3>
+        <p>Rigorous testing, smooth deployment, and ongoing support to ensure lasting performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="section-header">
+      <span class="eyebrow">Client Stories</span>
+      <h2>Trusted by <em>Industry Leaders</em></h2>
+    </div>
+    <div class="slider-wrapper">
+      <div class="slider" id="slider">
+        <div class="slide active">
+          <blockquote>"NexaCore transformed our digital presence. Our conversion rate doubled within three months of launch."</blockquote>
+          <cite>— Sarah Nguyen, CEO of Luminary Co.</cite>
+        </div>
+        <div class="slide">
+          <blockquote>"The team's attention to detail is unmatched. Every pixel, every animation felt intentional and polished."</blockquote>
+          <cite>— Marcus Adler, CTO of Foundry Labs</cite>
+        </div>
+        <div class="slide">
+          <blockquote>"Responsive, reliable, and genuinely innovative. NexaCore is the partner we always needed."</blockquote>
+          <cite>— Priya Mehta, Product Director at Elevate SaaS</cite>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn" aria-label="Previous slide">&#8592;</button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn" aria-label="Next slide">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Ready to build something <em>extraordinary?</em></h2>
+      <p>Let's turn your vision into a world-class digital experience.</p>
+      <a href="pages/contact.html" class="btn btn-primary btn-lg">Start a Project →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="logo">Nexa<span>Core</span></a>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="pages/services.html">Services</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2024 NexaCore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
